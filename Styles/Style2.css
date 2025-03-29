@@ -230,3 +230,9 @@ body {
     height: 70vh;
   }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
+  body {
+    grid-template-rows: 15% 1fr 1fr;
+  }
+}
