@@ -482,9 +482,13 @@ body {
   }
 }
 
-@media screen and (min-width: 813px) and (max-width: 992px) and (orientation: landscape) {
+@media screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
   body {
     row-gap: 4rem;
+  }
+
+  .sideBarOption a {
+    font-size: 0.5rem;
   }
 
   .showsideBar {
