@@ -487,12 +487,16 @@ body {
     row-gap: 4rem;
   }
 
+  .sideBar {
+    margin-top: 4.5rem;
+  }
+
   .sideBarOption a {
     font-size: 0.8rem;
   }
 
   .sideBarOption div {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .showsideBar {
