@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("../Fonts/ProtoSans05.woff2") format("woff2");
+}
+
+html {
+  font-family: "CustomFont";
+  letter-spacing: 5px;
+  background-color: rgb(53, 53, 53);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "navBar navBar"
+    "main1 main1"
+    "footer footer";
+}
+
+.magnify {
+  display: flex;
+}
+
+.magnify:hover h1 {
+  animation: magnify 1s ease-in-out infinite alternate;
+}
+
+@keyframes magnify {
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.magnify h1:nth-child(1) {
+  animation-delay: 0s;
+}
+.magnify h1:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.magnify h1:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.magnify h1:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.magnify h1:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.magnify h1:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.magnify h1:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.magnify h1:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.magnify h1:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.magnify h1:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+.h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+.header {
+  font-size: larger;
+  margin-left: 1rem;
+}
+
+.navBar {
+  grid-area: navBar;
+  width: 100%;
+  top: 0;
+  color: rgb(0, 72, 255);
+  z-index: 2;
+  background-color: rgb(27, 240, 254);
+  box-shadow: 0px 5px 20px 0px rgb(0, 72, 255);
+}
+
+.navBarContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.optionsNav {
+  width: 100%;
+  justify-content: right;
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.optionsNav a {
+  text-decoration: none;
+  color: rgb(0, 72, 255);
+  border-radius: 30%;
+  transition: box-shadow 0.5s ease, text-shadow 0.5s ease, padding 0.5s ease,
+    background-color 0.5s ease;
+}
+
+.optionsNav a.active {
+  background: rgba(57, 27, 254, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.optionsNav a:hover {
+  background: rgba(57, 27, 254, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.main1 {
+  grid-area: main1;
+  color: white;
+}
+
+.container1 {
+  height: 55%;
+  justify-items: center;
+  align-content: center;
+}
+
+.container1 img {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hoverbox {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.hoverbox img {
+  width: 20rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: -1;
+}
+
+.block {
+  display: block;
+  justify-items: center;
+  transition: margin 0.5s ease;
+}
+
+.hoverbox:hover .block {
+  margin: 10rem;
+}
+
+.javatext {
+  font-size: 1rem;
+  opacity: 0;
+  transition: color 2s ease, font-size 0.5s ease, opacity 0.5s ease;
+}
+
+.javalogo {
+  font-size: 2rem;
+  opacity: 0;
+  transition: text-shadow 2s ease, color 2s ease, font-size 0.8s ease,
+    opacity 0.5s ease;
+}
+
+.hoverbox:hover .javalogo {
+  font-size: 5rem;
+  opacity: 1;
+  color: rgba(255, 165, 0, 0.8);
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 165, 0, 0.8),
+    0 0 50px rgba(0, 0, 255, 0.8);
+}
+
+.hoverbox:hover .javatext {
+  font-size: 2rem;
+  opacity: 1;
+  color: rgba(255, 165, 0, 0.8);
+}
+
+.pythontext {
+  font-size: 1rem;
+  opacity: 0;
+  transition: color 2s ease, font-size 0.5s ease, opacity 0.5s ease;
+}
+
+.pythonlogo {
+  font-size: 2rem;
+  opacity: 0;
+  transition: text-shadow 2s ease, color 1s ease, font-size 0.8s ease,
+    opacity 0.5s ease;
+}
+
+.hoverbox:hover .pythonlogo {
+  font-size: 5rem;
+  opacity: 1;
+  color: rgb(48, 105, 152);
+  text-shadow: 0 0 20px rgb(255, 191, 0), 0 0 50px rgba(48, 105, 152, 0.8),
+    0 0 60px rgba(55, 48, 152, 0.8);
+}
+
+.hoverbox:hover .pythontext {
+  font-size: 2rem;
+  opacity: 1;
+  color: rgb(48, 105, 152);
+}
+
+.footer {
+  grid-area: footer;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0px 5px 20px 5px rgb(0, 195, 255);
+  background-color: rgba(0, 22, 131);
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .container1 {
+    height: 100%;
+  }
+  
+  body {
+    width: 100vh;
+    height: 216vh;
+  }
+
+  .container1 {
+    height: 90%;
+  }
+
+  .container1 img {
+    top: 50%;
+  }
+
+  .hoverbox:hover .block {
+    margin: 8rem;
+  }
+}
+
+@media screen and (min-width: 813px) and (max-width: 930px) and (orientation: landscape) {
+  body {
+    grid-template-rows: auto 100vh;
+  }
+
+  .container1 img {
+    position: relative;
+    width: 250px;
+    top: 50%;
+  }
+
+  .hoverbox {
+    position: relative;
+  }
+
+  .hoverbox:hover .javalogo {
+    font-size: 3rem;
+  }
+  
+  .hoverbox:hover .javatext {
+    font-size: 1rem;
+  }
+  
+  .hoverbox:hover .pythonlogo {
+    font-size: 3rem;
+  }
+  
+  .hoverbox:hover .pythontext {
+    font-size: 1rem;
+  }
+}

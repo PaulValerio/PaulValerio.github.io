@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./Fonts/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./Fonts/css/solid.min.css" />
+
+    <link rel="stylesheet" href="./Styles/Style1.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <div class="navBarContent">
+        <div class="bars" id="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <header class="header">
+          <div class="magnify">
+            <h1>P</h1>
+            <h1>a</h1>
+            <h1>u</h1>
+            <h1>l</h1>
+            <h1>f</h1>
+            <h1>o</h1>
+            <h1>r</h1>
+            <h1>l</h1>
+            <h1>i</h1>
+            <h1>o</h1>
+          </div>
+        </header>
+        <div class="optionsNav">
+          <h3>
+            <a href="index.html" class="active"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </h3>
+          <h3>
+            <a href="projects.html"
+              ><i class="fa-solid fa-list-check"></i> Projects</a
+            >
+          </h3>
+          <h3>
+            <a href="skills.html"
+              ><i class="fa-solid fa-keyboard"></i> Skills</a
+            >
+          </h3>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="sideBar">
+      <div class="sideBarOption">
+        <div>
+          <a href="#Intro"><h1>Introduction</h1></a>
+        </div>
+        <div>
+          <a href="#Educ"><h1>Educational Background</h1></a>
+        </div>
+        <div>
+          <a href="#Info"><h1>Information</h1></a>
+        </div>
+        <div>
+          <a href="#Contact"><h1>Contact Information</h1></a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main1" id="Intro">
+      <div class="container1">
+        <article class="text1">
+          <h2>Hello! I'm</h2>
+          <h1>Paul Ashlee T. Valerio</h1>
+          <h2>
+            And I'm a
+            <span class="highlightBlue">Computer Engineering Student</span>
+          </h2>
+          <p>
+            Currently studying at
+            <span class="highlightBlue">University Of The Assumption</span>
+          </p>
+        </article>
+        <div class="profile1 floating">
+          <div class="shape">
+            <img src="./Images/HomeProfile.png" alt="NoPic" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="main2">
+      <h1 class="h1" id="Educ">Educational Background</h1>
+      <div class="container2">
+        <div class="flexbox1">
+          <div class="text2">
+            <h3 class="highlightBlue">Lacmit Elementary School</h3>
+            <p>2011-2017</p>
+            <img src="./Images/LES.jpg" alt="NoPic" class="img1" />
+          </div>
+        </div>
+        <div class="flexbox1">
+          <div class="text2">
+            <h3 class="highlightBlue">
+              Arayat Holy Child Educational Foundation, Inc
+            </h3>
+            <p>2017-2021 (Junior Highschool), 2021-2023 (Senior Highschool)</p>
+            <img src="./Images/AHCEFI.jpg" alt="NoPic" class="img2" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="main3">
+      <h1 class="h1" id="Info">Information</h1>
+      <div class="container3">
+        <div class="infos">
+          <img src="./Images/Me.gif" alt="NoGIF" />
+          <h2>Full Name: Paul Ashlee Tubig Valerio</h2>
+        </div>
+        <div>
+          <div class="infos">
+            <img src="./Images/Bday.gif" alt="NoGIF" />
+            <h2>Birthday: October 13, 2004</h2>
+          </div>
+          <div class="infos">
+            <img src="./Images/Age.gif" alt="NoGIF" />
+            <h2>Age: 20</h2>
+          </div>
+        </div>
+        <div class="infos">
+          <img src="./Images/Home.gif" alt="NoGIF" />
+          <h2>Address: 0572 Purok 4 Lacmit, Arayat, Pampanga</h2>
+        </div>
+      </div>
+    </main>
+
+    <main class="main4">
+      <h1 class="h1" id="Contact">Contact Information</h1>
+      <div class="container4">
+        <div class="block">
+          <h3 class="googletext">Google Account</h3>
+          <a href="mailto:paulashleevalerio@gmail.com"
+            ><img src="./Images/Google.gif" alt="NoGIF" class="google"
+          /></a>
+        </div>
+        <div class="block">
+          <h3 class="githubtext">Github Account</h3>
+          <a href="https://github.com/Paul-Valerio13"
+            ><img src="./Images/Github.gif" alt="NoGIF" class="github"
+          /></a>
+        </div>
+        <div class="block">
+          <h3 class="facebooktext">Facebook Account</h3>
+          <a href="https://www.facebook.com/PaulAshlee.Valerio/"
+            ><img src="./Images/Facebook.gif" alt="NoGIF" class="facebook"
+          /></a>
+        </div>
+        <div class="block">
+          <h3 class="discordtext">Discord Account</h3>
+          <a href="https://discord.com/users/1135743105518293064"
+            ><img src="./Images/Discord.gif" alt="NoGIF" class="discord"
+          /></a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>© 2025 Paulforlio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const showsideBar = document.getElementById("bars");
+      showsideBar.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.classList.toggle("showsideBar");
+      });
+    </script>
+  </body>
+</html>
