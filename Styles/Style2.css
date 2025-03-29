@@ -201,10 +201,6 @@ body {
   );
 }
 
-::-webkit-scrollbar-button {
-  scrollbar-arrow-color: pink lightblue;
-}
-
 ::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 10px;
