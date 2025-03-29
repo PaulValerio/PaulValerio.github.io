@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: 0rem 1fr;
   grid-template-rows: 0% 1fr 1fr 1fr;
-  row-gap: 10rem;
+  row-gap: 12rem;
   grid-template-areas:
     "navBar navBar"
     "sideBar main1"
@@ -403,7 +403,7 @@ body {
 
 .text2:hover .img2 {
   box-shadow: 0px 0px 10px 1px white;
-  width: 500px;
+  width: 450px;
 }
 
 .highlightBlue {
