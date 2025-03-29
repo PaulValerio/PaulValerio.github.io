@@ -1,0 +1,5 @@
+-Hover Effects
+-Animations
+-Working And Correct Links
+-Collapsing Sidebar
+-Compatible To Mobile Devices (But User Needs To Zoom Out To Get The Full View Of The Website.)
