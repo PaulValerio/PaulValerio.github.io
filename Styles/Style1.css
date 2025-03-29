@@ -488,7 +488,11 @@ body {
   }
 
   .sideBarOption a {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .sideBarOption div {
+    margin-bottom: 1rem;
   }
 
   .showsideBar {
