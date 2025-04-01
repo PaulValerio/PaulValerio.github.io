@@ -102,6 +102,21 @@ body {
   .sideBar {
     transform: translateX(0);
   }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 50% 49%;
+    grid-template-rows: 30rem;
+  }
+
+  .text2 {
+    height: 36%;
+  }
+
+  .img1 {
+    width: 350px;
+    height: 200px;
+  }
 }
 
 .header {
@@ -249,7 +264,10 @@ body {
 
 .container2 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 49%;
+  grid-template-rows: 30rem;
+  margin: 1rem;
+  gap: 1rem;
 }
 
 .container3 {
@@ -277,12 +295,36 @@ body {
   width: 5rem;
 }
 
-.flexbox1 {
-  display: flex;
+.blockbox1 {
+  display: block;
   gap: 1rem;
   justify-content: center;
+  justify-items: center;
   text-align: center;
   font-size: 20px;
+  background-color: rgba(0, 255, 255, 0.637);
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+}
+
+.blockbox2 {
+  display: block;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(0, 255, 255, 0.637);
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+}
+
+.blockbox1:hover {
+  box-shadow: 0px 0px 20px 3px rgb(0, 195, 255);
+}
+
+.blockbox2:hover {
+  box-shadow: 0px 0px 20px 3px rgb(0, 195, 255);
 }
 
 .block {
@@ -382,28 +424,20 @@ body {
 .text2 {
   text-align: center;
   font-size: 20px;
+  width: 90%;
+  height: 27%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 255, 0.393);
+  transition: height 0.5s ease;
 }
 
-.text2 .img1 {
-  width: 0px;
+.img1 {
   border-radius: 5px;
-  transition: width 0.5s ease;
-}
-
-.text2:hover .img1 {
-  box-shadow: 0px 0px 10px 1px white;
-  width: 350px;
-}
-
-.text2 .img2 {
-  width: 0px;
-  border-radius: 5px;
-  transition: width 0.5s ease;
-}
-
-.text2:hover .img2 {
   box-shadow: 0px 0px 10px 1px white;
   width: 450px;
+  height: 250px;
+  transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
 .highlightBlue {
@@ -472,13 +506,31 @@ body {
   .text2:hover .img1 {
     width: 240px;
   }
-  
+
   .text2:hover .img2 {
     width: 350px;
   }
 
   .showsideBar {
     grid-template-columns: 0rem 1fr;
+
+    .text2 {
+      height: 40%;
+    }
+
+    .img1 {
+      width: 350px;
+      height: 200px;
+    }
+  }
+
+  .text2 {
+    height: 40%;
+  }
+
+  .img1 {
+    width: 350px;
+    height: 200px;
   }
 }
 
@@ -501,13 +553,23 @@ body {
 
   .showsideBar {
     grid-template-columns: 0rem 1fr;
+
+    .text2 {
+      height: 40%;
+    }
+
+    .img1 {
+      width: 350px;
+      height: 200px;
+    }
   }
 
-  .text2:hover .img1 {
-    width: 250px;
+  .text2 {
+    height: 40%;
   }
 
-  .text2:hover .img2 {
+  .img1 {
     width: 350px;
+    height: 200px;
   }
 }
